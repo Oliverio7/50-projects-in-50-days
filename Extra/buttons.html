@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+    <style>
+      .container {
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
+        .button {
+          margin: 20px;
+          width: 150px;
+          height: 50px;
+
+          &.button {
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          &.square {
+            background-color: blue;
+            color: white;
+          }
+          &.square:hover {
+            opacity: 0.5;
+          }
+
+          &.rounded {
+            background-color: green;
+            border-radius: 50px;
+            color: white;
+            border: none;
+          }
+          &.rounded:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          }
+
+          &.outline {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+          }
+          &.outline:hover {
+            background-color: black;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            color: white;
+          }
+
+          &.gradient {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+          }
+          &.gradient:hover {
+            background: #0f2027; /* fallback for old browsers */
+            background: -webkit-linear-gradient(
+              to right,
+              #2c5364,
+              #203a43,
+              #0f2027
+            ); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(
+              to right,
+              #2c5364,
+              #203a43,
+              #0f2027
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          }
+          &.shadow {
+            background-color: green;
+            color: white;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          }
+          &.shadow:hover {
+            box-shadow: none;
+          }
+          &.icon {
+            background-color: #f5af19;
+            color: black;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          }
+          &.icon:hover {
+            background: #f12711; /* fallback for old browsers */
+            background: -webkit-linear-gradient(
+              to right,
+              #f5af19,
+              #f12711
+            ); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(
+              to right,
+              #f5af19,
+              #f12711
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          }
+          &.link {
+            background: none;
+            border: none;
+            color: blue;
+          }
+          &.link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            background: aquamarine;
+            opacity: 0.3;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button square">Squared</button>
+      <button class="button rounded">Rounded</button>
+      <button class="button outline">Outlined</button>
+      <button class="button gradient">Gradient</button>
+      <button class="button shadow">Shadow</button>
+      <button class="button icon">&#9733; Icon</button>
+      <button class="button link">Link</button>
+    </div>
+  </body>
+</html>
